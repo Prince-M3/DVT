@@ -1,0 +1,8 @@
+import pandas as pd
+
+data = {'Product': ['A', 'B', 'C', 'D'], 'Sales': [1000, 2000, 3000, 4000]}
+df = pd.DataFrame(data)
+df.to_csv('powerbi_dataset.csv', index=False)
+df.to_csv('/content/powerbi_dataset.csv', index=False)
+
+print("CSV file saved successfully!")
